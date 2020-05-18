@@ -1,0 +1,72 @@
+ 
+<html>
+
+<head>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+   
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"> </script>
+
+   
+</head>
+
+<body>
+   
+    <div class="login">
+
+    <div class="form">
+    
+       <h2>Login </h2>
+          
+         <form action="/users/login" method="GET" >
+
+
+            <label for="Email">Email</label>
+            <input type="email" required="true" name="email" ><br>
+            
+
+              <label for="Password">Password</label><br>
+            <input type="password" required="true" name="password" >
+
+
+
+            <input type="submit" value="submit">
+
+         </form>
+
+
+         
+         <a href="/users/forgotpassword"><button>
+          Forgot password
+      </button>
+       </a>
+   
+
+
+    </div>
+
+    
+
+  <script> 
+   
+   
+
+    <%  if(locals.flash) { %>
+      
+
+ 
+     new Noty({    
+  
+    text:"<%=flash.message%>" ,
+    theme:'mint',
+    timeout:1500
+
+      }).show();
+
+
+    <% } %>
+
+   </script>  
+
+</body>
+
+</html>

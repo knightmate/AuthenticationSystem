@@ -1,0 +1,41 @@
+{
+  "name": "system",
+  "version": "1.0.0",
+  "description": "Simple Authentication system build using node js ",
+  "main": "app.js",
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meghraj1998/Authenticaiton-System-.git"
+  },
+  "author": "MeghrajDeshmukh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Meghraj1998/Authenticaiton-System-/issues"
+  },
+  "homepage": "https://github.com/Meghraj1998/Authenticaiton-System-#readme",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "crypto": "^1.0.1",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "heroku": "^7.41.1",
+    "mongoose": "^5.9.14",
+    "nodemailer": "^6.4.6",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "session": "^0.1.0"
+  }
+}

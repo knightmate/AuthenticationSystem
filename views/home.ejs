@@ -1,0 +1,51 @@
+
+ <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+    
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"> </script>
+ 
+    
+ </head>
+
+<%if(locals.user) {%>
+
+   Login SucessFull , Welcome Meghraj 
+
+     
+<%}else {%>
+    
+    <%=locals.loggedin%>
+    <a href="/users/signup"><button>
+        signup
+        </button>
+        </a>
+        
+
+
+<%}%>
+
+<script> 
+   
+   
+
+    <%  if(locals.user) { %>
+      
+
+ 
+     new Noty({    
+  
+    text:"Login sucessfully" ,
+    theme:'mint',
+    timeout:1500
+
+      }).show();
+
+
+    <% } %>
+
+   </script> 
+
+ 
+ 
+
+ 

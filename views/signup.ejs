@@ -1,0 +1,89 @@
+<html>
+
+
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+    
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"> </script>
+ 
+    
+ </head> 
+<body>
+<div class="signup">
+
+    <div class="form">
+    
+       
+       <h2> User SignUp </h2>
+          
+         <form action="/users/createuser" method="POST" >
+
+
+            <label for="Email">Email</label>
+            <input type="email" required="true" name="email" ><br>
+            
+
+            <label for="Name">Name</label>
+            <input type="text" required="true" name="name" ><br>
+            
+             <label for="Phone">Phone</label>
+             <input type="text" required="true" name="phone" ><br>
+            
+             <label for="Gender">Gender</label><br>
+             <select id="gender"><br>
+               <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                
+              </select><br>
+                 
+                
+              <label for="City">City</label><br>
+              <input type="text" required="true" name="city" ><br>
+              
+
+              <label for="Password">Password</label><br>
+            <input type="password" required="true" name="password" >
+
+
+           
+        
+
+
+            <input type="submit" value="submit">
+
+         </form>
+
+
+    </div>
+
+   
+
+
+  <script> 
+   
+   
+      
+    <%  if( locals.flash.success) { %>
+      
+
+ 
+     new Noty({    
+  
+    text:'<%=locals.flash.success%>',
+    theme:'mint',
+    timeout:1500
+
+      }).show();
+
+
+    <% } %>
+
+   </script>
+<html>
+
+<body>
+
+
+</div>
+<body>
+</html> 
